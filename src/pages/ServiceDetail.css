@@ -1,0 +1,300 @@
+/* 404 */
+.not-found {
+  padding-top: 200px;
+  padding-bottom: 40px;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  background: radial-gradient(circle at top, #a78bfa, #4f46e5, #0f172a);
+  color: white;
+  font-family: system-ui, sans-serif;
+}
+
+.not-found h2 {
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  animation: floatText 3s ease-in-out infinite;
+}
+
+.not-found p {
+  font-size: 16px;
+  opacity: 0.85;
+  margin-bottom: 25px;
+}
+
+.not-found a {
+  display: inline-block;
+  padding: 12px 22px;
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 999px;
+  text-decoration: none;
+  backdrop-filter: blur(10px);
+  transition: all 0.25s ease;
+}
+
+.not-found a:hover {
+  background: white;
+  color: #4f46e5;
+  transform: scale(1.05);
+}
+
+/* floating glow effect */
+.not-found::before {
+  content: "404";
+  position: absolute;
+  font-size: 160px;
+  font-weight: 900;
+  opacity: 0.08;
+  top: 20%;
+  animation: drift 6s ease-in-out infinite;
+}
+
+/* animations */
+@keyframes floatText {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
+}
+
+@keyframes drift {
+  0%, 100% { transform: translateX(0px); }
+  50% { transform: translateX(20px); }
+}
+/* page */
+.service-detail-hero {
+  background-size: cover;
+  background-position: center;
+  padding: 200px 0;
+  color: white;
+  background-color: rgba(7,28,61,0.6);
+}
+ .service-detail-inner { width: 90%; max-width: 1100px; margin: 0 auto; text-align: left; }
+.service-detail-inner h1 { font-size: 2rem; margin-bottom: 8px; }
+.service-detail-inner p { color: rgba(255,255,255,0.9); margin-bottom: 12px; }
+
+/*.service-detail.container { width: 90%; margin: 40px auto 80px; }
+.detail-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 28px; }
+.detail-main h2 { margin-top: 0; }
+.detail-main ul { padding-left: 18px; }
+.cta-row { display:flex; gap:12px; margin-top:18px; }
+.related ul { list-style: none; padding: 0; }
+.related li { margin-bottom: 8px; }
+
+@media (max-width: 900px) { .detail-grid { grid-template-columns: 1fr; } } */
+/* --- Global Container Utilities --- */
+.detail-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #334155; /* Slate 700 */
+}
+
+@media screen and (max-width: 425px) {
+  .service-detail.detail-container {
+    padding: 1rem 0.5rem; /* Forces it to stick all the way down to 0px */
+  }
+}
+
+/* --- Layout Grid --- */
+.detail-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  align-items: start;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 992px) {
+  .detail-grid {
+    grid-template-columns: 7fr 3fr; /* 70% content, 30% sidebar */
+  }
+}
+
+/* --- Main Content Section --- */
+.detail-main {
+  background: #ffffff;
+  padding: 2.5rem;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0; /* Light border instead of heavy shadows */
+}
+
+.detail-main h2 {
+  font-size: 2rem;
+  color: #0f172a; /* Slate 900 - Your Theme Color */
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.025em;
+}
+
+.detail-main p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #475569; /* Slate 600 */
+  margin-bottom: 1.5rem;
+}
+
+/* Accent highlight for the extra note (e.g., "Early detection saves lives") */
+.detail-main .extra {
+  font-weight: 600;
+  color: #0284c7; /* Professional Medical Sky Blue */
+  background: #f0f9ff;
+  padding: 1rem 1.25rem;
+  border-left: 4px solid #0284c7;
+  border-radius: 4px;
+  margin: 2rem 0;
+}
+
+/* --- Features List Styling --- */
+.detail-main h3 {
+  font-size: 1.35rem;
+  color: #1e293b;
+  font-weight: 600;
+  margin-top: 2.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.detail-main ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 3rem 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 640px) {
+  .detail-main ul {
+    grid-template-columns: repeat(2, 1fr); /* Two-column features layout on tablet/desktop */
+  }
+}
+
+.detail-main ul li {
+  position: relative;
+  padding-left: 2rem;
+  font-size: 1.05rem;
+  line-height: 1.5;
+  color: #334155;
+}
+
+/* Clean Custom Corporate Checkmark Icon Replacement */
+.detail-main ul li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 1.25rem;
+  height: 1.25rem;
+  background: #e0f2fe;
+  color: #0369a1;
+  font-weight: bold;
+  font-size: 0.85rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* --- Action Button Row --- */
+.cta-row {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 2rem;
+  border-top: 1px solid #f1f5f9;
+}
+
+@media (min-width: 480px) {
+  .cta-row {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.875rem 1.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.btn.primary {
+  background-color: #0f172a; /* Dark Corporate Theme Color */
+  color: #ffffff;
+}
+
+.btn.primary:hover {
+  background-color: #1e293b;
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.btn.ghost {
+  background-color: transparent;
+  color: #f5f8fc;
+  border: 1px solid #cbd5e1;
+}
+
+.btn.ghost:hover {
+  background-color: #f8fafc;
+  color: #0f172a;
+  border-color: #94a3b8;
+}
+
+/* --- Corporate Sidebar (Related Services) --- */
+.related {
+  background: #f8fafc; /* Crisp, clean off-white background */
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+}
+
+.related h4 {
+  font-size: 1.15rem;
+  color: #0f172a;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.related ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.related ul li a {
+  display: block;
+  padding: 0.85rem 1rem;
+  background: #ffffff;
+  color: #475569;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
+  transition: all 0.2s ease;
+}
+
+.related ul li a:hover {
+  color: #0284c7;
+  border-color: #0284c7;
+  background: #f0f9ff;
+  padding-left: 1.25rem; /* Smooth offset shift effect on hover */
+}
+

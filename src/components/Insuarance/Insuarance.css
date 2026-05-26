@@ -1,0 +1,210 @@
+/* ====================================
+   INSURANCE SECTION
+==================================== */
+
+.insurance-section{
+    scroll-margin-top: -20px;
+    background: #f8fafc;
+    padding: 80px 20px;
+    font-family: 'Inter', Arial, sans-serif;
+}
+
+.insurance-container{
+    max-width: 1240px;
+    margin: auto;
+    padding: 0 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* ====================================
+   SLIDER (horizontal scroll)
+==================================== */
+.insurance-slider{
+    width: 100%;
+    overflow: hidden;
+}
+
+.marquee-row{
+    overflow: hidden;
+    margin-bottom: var(--row-gap, 18px);
+}
+
+.marquee-row:last-of-type{
+    margin-bottom: 0;
+}
+
+.marquee-row .list{
+    display: flex;
+    gap: var(--gap, 10px);
+    align-items: stretch;
+    width: max-content;
+    animation: marquee var(--duration, 28s) linear infinite;
+}
+
+.marquee-row.reverse .list{
+    animation-duration: var(--duration-rev, 34s);
+    animation-direction: reverse;
+}
+
+.marquee-row .list:hover{
+    animation-play-state: paused;
+}
+
+.marquee-row .list .insurance-card{
+    flex: 0 0 var(--w, 220px);
+}
+
+@keyframes marquee{
+    from{ transform: translateX(0); }
+    to{ transform: translateX(-50%); }
+}
+
+@media (max-width: 600px) {
+    .marquee-row .list{
+        gap: 10px; /* reduce spacing between cards on small screens */
+    }
+
+    .marquee-row .list .insurance-card{
+        flex: 0 0 calc(var(--w, 220px) * 0.8); /* slightly narrower cards on mobile */
+    }
+
+    .insurance-disclaimer{
+        padding: 20px 16px;
+        gap: 16px;
+    }
+
+    .disclaimer-box{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+    }
+
+    .disclaimer-box p{
+        font-size: 15px;
+    }
+}
+/* ====================================
+   CARD
+==================================== */
+
+.insurance-card{
+    background: white;
+    border-radius: 4px;
+    padding: 10px 8px;
+    text-align: center;
+
+    border: 1px solid #edf2f7;
+
+    /* box-shadow:
+    0 8px 24px rgba(15, 23, 42, 0.08); */
+
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+
+    position: relative;
+    overflow: hidden;
+}
+
+/* ====================================
+   TITLE
+==================================== */
+
+.insurance-card h3{
+    font-size: 27px;
+    color: #0f172a;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+
+
+.status{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.accepted{
+    color: #15803d;
+}
+
+.corporate{
+    color: #2563eb;
+}
+
+/* GREEN DOT */
+
+.dot{
+    width: 12px;
+    height: 12px;
+
+    background: #22c55e;
+
+    border-radius: 50%;
+}
+
+/* ====================================
+   DISCLAIMER
+==================================== */
+
+.insurance-disclaimer{
+    width: min(920px, 100%);
+    margin: 0 auto;
+    margin-top: 10px;
+    background: white;
+    border-radius: 18px;
+    padding: 32px 34px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    border: 1px solid #edf2f7;
+    box-shadow:
+    0 5px 20px rgba(0,0,0,0.03);
+}
+
+/* LEFT SIDE */
+
+.disclaimer-box{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    flex: 1;
+}
+
+/* INFO ICON */
+
+.icon{
+    width: 55px;
+    height: 55px;
+
+    border-radius: 50%;
+
+    border: 2px solid #2563eb;
+
+    color: #2563eb;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 26px;
+    font-weight: bold;
+
+    flex-shrink: 0;
+}
+
+/* DISCLAIMER TEXT */
+
+.disclaimer-box p{
+    color: #4b5563;
+    font-size: 16px;
+    line-height: 1.8;
+}

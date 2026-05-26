@@ -1,0 +1,93 @@
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(rgba(7,28,61,0.6), rgba(0, 0, 0, 1)),
+    url(../../assets/1.jpeg);
+
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+
+  color: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 100px 20px 60px;
+}
+
+.hero-text {
+  text-align: center;
+  max-width: 800px;
+  width: 100%;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  line-height: 1.7;
+}
+
+.hero .btn img {
+    filter: brightness(0) invert(1);
+}
+/* ---------- TABLETS ---------- */
+@media (max-width: 992px) {
+  .hero {
+    padding: 120px 30px 70px;
+  }
+
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-text p {
+    font-size: 1.1rem;
+  }
+}
+
+/* ---------- MOBILE ---------- */
+@media (max-width: 768px) {
+  .hero {
+    min-height: 90vh;
+    padding: 120px 20px 60px;
+    background-position: center;
+  }
+
+  .hero-text {
+    max-width: 100%;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}
+
+/* ---------- SMALL PHONES ---------- */
+@media (max-width: 480px) {
+  .hero {
+    padding: 110px 15px 50px;
+  }
+
+  .hero-text h1 {
+    font-size: 1.7rem;
+  }
+
+  .hero-text p {
+    font-size: 0.95rem;
+  }
+}

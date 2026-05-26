@@ -1,0 +1,301 @@
+.Insurance-hero{
+  background:
+    linear-gradient(rgba(7,28,61,0.6), rgba(4,20,44,0.8)),
+    url('../assets/1.jpeg');
+
+  background-size: cover;
+  background-position: center;
+
+  color: white;
+
+  padding: 200px 0;
+
+  text-align: center;
+}
+
+.Insurance-hero-inner{
+  width: 90%;
+  margin: auto;
+  max-width: 1100px;
+}
+
+.Insurance-hero h1{
+  font-size: 2.8rem;
+  margin-bottom: 18px;
+}
+
+.Insurance-hero p{
+  font-size: 1.05rem;
+  color: rgba(255,255,255,0.88);
+
+  max-width: 760px;
+  margin: auto;
+
+  line-height: 1.8;
+}
+/* ====================================
+   PAGE
+==================================== */
+
+.insurance-page{
+  background: #f8fafc;
+  padding: 0;
+}
+
+/* ====================================
+   CONTAINER
+==================================== */
+
+.insurance-container{
+  width: 100%;
+  max-width: 1250px;
+  margin: auto;
+}
+
+/* ====================================
+   HEADING
+==================================== */
+
+.insurance-heading{
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+
+.insurance-heading h2{
+  font-size: 2.3rem;
+  color: #0f172a;
+
+  margin-bottom: 18px;
+}
+
+.insurance-heading p{
+  max-width: 760px;
+  margin: auto;
+
+  color: #64748b;
+
+  line-height: 1.8;
+}
+
+/* ====================================
+   GRID
+==================================== */
+
+.insurance-grid{
+  display: grid;
+
+  grid-template-columns:
+  repeat(auto-fit, minmax(240px, 1fr));
+
+  gap: 22px;
+}
+
+/* ====================================
+   CARD
+==================================== */
+
+.insurance-card{
+  background: white;
+
+  border-radius: 24px;
+
+  padding: 34px 24px;
+
+  text-align: center;
+
+  border: 1px solid #e2e8f0;
+
+  position: relative;
+
+  overflow: hidden;
+
+  transition:
+  transform 0.35s ease,
+  box-shadow 0.35s ease,
+  border-color 0.35s ease;
+}
+
+/* glow effect */
+
+.card-glow{
+  position: absolute;
+  inset: 0;
+
+  background:
+  radial-gradient(
+    circle at top right,
+    rgba(37,99,235,0.08),
+    transparent 60%
+  );
+
+  opacity: 0;
+
+  transition: 0.35s ease;
+}
+
+.insurance-card:hover{
+  transform: translateY(-8px);
+
+  border-color: rgba(37,99,235,0.18);
+
+  box-shadow:
+  0 20px 45px rgba(15,23,42,0.08);
+}
+
+.insurance-card:hover .card-glow{
+  opacity: 1;
+}
+
+/* ====================================
+   CARD TITLE
+==================================== */
+
+.insurance-card h3{
+  position: relative;
+
+  font-size: 1.35rem;
+
+  color: #0f172a;
+
+  margin-bottom: 18px;
+
+  font-weight: 700;
+}
+
+/* ====================================
+   STATUS
+==================================== */
+
+.status{
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  font-size: 0.98rem;
+  font-weight: 600;
+}
+
+.accepted{
+  color: #15803d;
+}
+
+.corporate{
+  color: #2563eb;
+}
+
+/* GREEN DOT */
+
+.dot{
+  width: 11px;
+  height: 11px;
+
+  background: #22c55e;
+
+  border-radius: 50%;
+}
+
+/* ====================================
+   DISCLAIMER
+==================================== */
+
+.insurance-disclaimer{
+  margin-top: 70px;
+
+  background: white;
+
+  border-radius: 28px;
+
+  padding: 36px;
+
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+
+  border: 1px solid #e2e8f0;
+
+  box-shadow:
+  0 10px 35px rgba(15,23,42,0.04);
+}
+
+.disclaimer-icon{
+  width: 64px;
+  height: 64px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background:
+  linear-gradient(135deg, #2563eb, #1d4ed8);
+
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.disclaimer-content h3{
+  color: #0f172a;
+  margin-bottom: 12px;
+}
+
+.disclaimer-content p{
+  color: #64748b;
+  line-height: 1.8;
+}
+
+/* ====================================
+   TABLET
+==================================== */
+
+@media (max-width: 768px){
+
+  .Insurance-hero{
+    padding: 160px 20px;
+  }
+
+  .Insurance-hero h1{
+    font-size: 2.2rem;
+  }
+
+  .insurance-heading h2{
+    font-size: 1.9rem;
+  }
+
+  /* 2 columns on tablets */
+
+  .insurance-grid{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+
+  .insurance-disclaimer{
+    flex-direction: column;
+    padding: 28px;
+  }
+
+  .insurance-card{
+    padding: 28px 20px;
+  }
+
+}
+
+/* ====================================
+   MOBILE
+==================================== */
+
+@media (max-width: 450px){
+
+  .insurance-grid{
+    grid-template-columns: 1fr;
+  }
+
+}
