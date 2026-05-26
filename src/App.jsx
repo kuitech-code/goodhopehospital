@@ -28,7 +28,8 @@ const Home = () => (
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/goodhopehospital">
+
       <Whatsapp />
       <EmergencyPopup />
       <ScrollToTop />
