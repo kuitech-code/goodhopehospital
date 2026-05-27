@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar/Navbar'
 import Footer from '../components/Footer/Footer'
 import ServiceCard from '../components/ServiceCard/ServiceCard'
@@ -35,7 +36,9 @@ const ServicesPage = () => {
             <p>
               Our hospital continuously expands its clinical offerings to support our community. If the specific service, specialist clinic, or medical examination you are looking for is not listed here, please get in touch with our reception desk. We are here to guide you to the right medical professional.
             </p>
-            <button className='btn primary' onClick={() => window.location.href = '/contact'}>Contact Us</button>
+            <Link to="/contact">
+              <button className='btn primary'>Contact Us</button>
+            </Link>
 
           </div>
         </section>

@@ -68,7 +68,9 @@ const ServiceDetail = () => {
             <p>
               If you have any questions about our services or would like to learn more, don't hesitate to contact us. Our team is here to provide you with the information and support you need to make informed decisions about your healthcare.
             </p>
-            <button className='btn primary' onClick={() => window.location.href = '/contact'}>Contact Us</button>
+            <Link to="/contact">
+              <button className='btn primary'>Contact Us</button>
+            </Link>
           </div>
         </section>
       </main>
