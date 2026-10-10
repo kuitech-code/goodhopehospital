@@ -46,9 +46,9 @@ function Footer() {
         <div className="footer-section">
           <h3>Contact Us</h3>
 
-          <p> <img src={phoneIcon} className="footer-icon" alt="Phone Icon" /> Nyaururu, Kenya</p>
-          <p> <img src={emailIcon} className="footer-icon" alt="Email Icon" /> +254728882528</p>
-          <p> <img src={locationIcon} className="footer-icon" alt="Location Icon" /> goodhopenyahururu@gmail.com</p>
+          <p> <img src={locationIcon} className="footer-icon" alt="Phone Icon" /> Nyaururu, Kenya</p>
+          <p> <img src={phoneIcon} className="footer-icon" alt="Email Icon" /> +254728882528</p>
+          <p> <img src={emailIcon} className="footer-icon" alt="Location Icon" /> goodhopenyahururu@gmail.com</p>
           <p> <img src={timeIcon} className="footer-icon" alt="Time Icon" /> Open 24 Hours</p>
         </div>
 
