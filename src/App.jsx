@@ -28,7 +28,7 @@ const Home = () => (
 
 const App = () => {
   return (
-    <BrowserRouter basename="/goodhopehospital">
+    <BrowserRouter>
 
       <Whatsapp />
       <EmergencyPopup />
