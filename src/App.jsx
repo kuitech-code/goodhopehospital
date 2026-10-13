@@ -1,4 +1,3 @@
-import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar/Navbar'
 import Hero from './components/Hero/Hero'
@@ -8,6 +7,7 @@ import Footer from './components/Footer/Footer'
 import Whatsapp from './components/Whatsapp/Whatsapp'
 import EmergencyPopup from './components/EmergencyPopup/EmergencyPopup'
 import ScrollToTop from './components/ScrollToTop';
+import Seo from './components/Seo'
 
 import ServicesPage from './pages/ServicesPage'
 import ServiceDetail from './pages/ServiceDetail'
@@ -26,14 +26,12 @@ const Home = () => (
   </div>
 )
 
-const App = () => {
-  return (
-    <BrowserRouter>
-
-      <Whatsapp />
-      <EmergencyPopup />
-      <ScrollToTop />
-      
+export const AppRoutes = () => (
+  <>
+    <Seo />
+    <Whatsapp />
+    <EmergencyPopup />
+    <ScrollToTop />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/services' element={<ServicesPage />} />
@@ -43,8 +41,13 @@ const App = () => {
         <Route path='/contact' element={<ContactPage />} />
         <Route path='/privacy' element={<PrivacyPolicy />} />
       </Routes>
-    </BrowserRouter>
-  )
-}
+  </>
+)
+
+const App = () => (
+  <BrowserRouter>
+    <AppRoutes />
+  </BrowserRouter>
+)
 
 export default App
