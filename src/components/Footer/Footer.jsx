@@ -72,7 +72,7 @@ function Footer() {
         <p>
           © {new Date().getFullYear()} Good Hope Hospital. All Rights Reserved. | 
           <a
-            href="https://wa.me/254700000000?text=Hello%20KuiTech%2C%20I%20would%20like%20to%20inquire%20about%20website%20development%20services."
+            href="https://wa.me/254741194959?text=Hello%20KuiTech%2C%20I%20would%20like%20to%20inquire%20about%20website%20development%20services."
             target="_blank"
             rel="noopener noreferrer" >
             {" "}Website by KuiTech
