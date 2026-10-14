@@ -1,21 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <title>Good Hope Hospital</title>
-    <script type="text/javascript">
-      // This script checks if the page setup is broken and sends it back to the home route safely
-      var segmentCount = 1;
-      var l = window.location;
-      l.replace(
-        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
-        l.pathname.split('/').slice(0, 1 + segmentCount).join('/') + '/?p=' +
-        l.pathname.slice(1).split('/').slice(segmentCount).join('/').replace(/&/g, '~and~') +
-        (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
-        l.hash
-      );
-    </script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, follow" />
+    <title>Page Not Found | Goodhope Nursing Hospital</title>
+    <style>
+      body { margin: 0; color: #18312d; background: #f5f8f6; font: 16px/1.6 system-ui, sans-serif; }
+      main { box-sizing: border-box; max-width: 680px; margin: 12vh auto; padding: 32px; }
+      p { margin: 0 0 12px; }
+      h1 { margin: 0 0 12px; font-size: 2rem; }
+      a { color: #087f70; font-weight: 650; }
+    </style>
   </head>
   <body>
+    <main>
+      <p>Goodhope Nursing Hospital</p>
+      <h1>Page not found</h1>
+      <p>That address does not match a page on our website.</p>
+      <a href="/">Return to the home page</a>
+    </main>
   </body>
 </html>
