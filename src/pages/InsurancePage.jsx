@@ -73,7 +73,7 @@ const InsurancePage = () => {
               </h2>
 
               <p>
-                Goodhope Nursing Hospital works with a wide
+                Goodhope Nyahururu Hospital works with a wide
                 range of insurance providers to ensure patients
                 receive seamless and reliable healthcare support.
               </p>

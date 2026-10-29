@@ -113,7 +113,7 @@ const ContactPage = () => {
             <h2>Find Us Easily</h2>
 
             <p>
-              Visit Goodhope Nursing Hospital in Nyahururu Town.
+              Visit Goodhope Nyahururu Hospital in Nyahururu Town.
             </p>
           </div>
 

@@ -13,7 +13,7 @@ const PrivacyPolicy = () => {
           <h1>Privacy Policy & Terms</h1>
           <p>
             How we collect, use, and protect your information at
-            Goodhope Nursing Hospital.
+            Goodhope Nyahururu Hospital.
           </p>
         </div>
       </header>

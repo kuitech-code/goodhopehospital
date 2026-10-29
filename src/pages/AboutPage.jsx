@@ -20,8 +20,8 @@ const AboutPage = () => {
           </h1>
 
           <p>
-            Goodhope Nursing Hospital has grown into a trusted healthcare
-            provider in Nyahururu, delivering affordable, professional, and
+            Goodhope Nyahururu Hospital has grown into a trusted healthcare
+            provider in Laikipia, delivering affordable, professional, and
             patient-centered care with compassion and excellence.
           </p>
 
@@ -40,7 +40,7 @@ const AboutPage = () => {
               <h2>Built on Hope, Care, and Trust</h2>
 
               <p>
-                Located in the heart of Nyahururu Town, Goodhope Nursing
+                Located in the heart of Nyahururu Town, Goodhope Nyahururu
                 Hospital was founded with a simple but powerful vision —
                 to provide quality healthcare that feels human.
               </p>
@@ -128,7 +128,7 @@ const AboutPage = () => {
 
             <p>
               As healthcare needs in the region have continued to grow,
-              Goodhope Nursing Hospital has expanded its capacity,
+              Goodhope Nyahururu Hospital has expanded its capacity,
               strengthened its medical team, and improved patient care
               experiences through continuous investment in quality and
               modern healthcare practices.
@@ -160,7 +160,7 @@ const AboutPage = () => {
             <h2>Recognized for Community Impact</h2>
 
             <p>
-              Goodhope Nursing Hospital was recognized as a finalist in
+              Goodhope Nyahururu Hospital was recognized as a finalist in
               the Kenya Chamber of Commerce and Industry Business Awards
               under the Community Impact Award category — a reflection of
               the hospital’s commitment to improving lives through
